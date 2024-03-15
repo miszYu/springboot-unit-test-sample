@@ -8,10 +8,10 @@ CREATE TABLE student (
 );
 DROP TABLE IF EXISTS teacher;
 CREATE TABLE teacher (
-   id int PRIMARY KEY AUTO_INCREMENT,
-   name varchar(30),
-   stafflv varchar(10),
-   gender varchar(1) DEFAULT NULL
+   id INT PRIMARY KEY AUTO_INCREMENT,
+   name VARCHAR(30),
+   stafflv VARCHAR(10),
+   gender VARCHAR(1) DEFAULT NULL
 )
 
 
