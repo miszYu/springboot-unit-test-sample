@@ -20,7 +20,7 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public Student insertByName(Student student){
-        String sql = "INSERT INTO STUDENT (name) VALUE (:name)";
+        String sql = "INSERT INTO STUDENT (name) VALUES (:name)";
 
         String name = student.getName();
 
@@ -40,7 +40,7 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public void insertBatchByNames(List<Student> students){
-        String sql = "INSERT INTO STUDENT (name) VALUE (:name)";
+        String sql = "INSERT INTO STUDENT (name) VALUES (:name)";
 
         List<MapSqlParameterSource> parameterSourceList = new ArrayList<>();
         MapSqlParameterSource parameterSource = null;
