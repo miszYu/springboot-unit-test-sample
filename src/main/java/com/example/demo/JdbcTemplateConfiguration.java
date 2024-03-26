@@ -15,11 +15,11 @@ import javax.sql.DataSource;
 public class JdbcTemplateConfiguration {
 
     //建立DataSource
-    @Bean
+    @Bean("myjdbcDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.myjdbc")
     public DataSource myjdbcDataSource() {
-
-        return DataSourceBuilder.create().build();
+        DataSource ds = DataSourceBuilder.create().build();
+git        return ds;
 
     }
     //建立JdbcTemplate
